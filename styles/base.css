@@ -1,0 +1,49 @@
+/* Reset */
+:root {
+  --primary: #2a5298;
+  --bg: #f2f4f8;
+  --text: #333;
+
+  --header-footer-bg: linear-gradient(135deg, #1e3c72, #2a5298);
+  --header-footer-text: #fff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Base typography */
+body {
+  font: 16px/1.6 "Segoe UI", sans-serif;
+  background: #f2f4f8;
+  color: #333;
+}
+
+/* Lists */
+ol {
+  margin-left: 2rem;
+  padding-left: 1rem;
+}
+
+ol li {
+  list-style-type: decimal;
+  margin-bottom: 6px;
+}
