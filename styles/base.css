@@ -47,3 +47,12 @@ ol li {
   list-style-type: decimal;
   margin-bottom: 6px;
 }
+
+ul {
+  margin-left: 2rem;
+  padding-left: 1rem;
+}
+
+ul li {
+  border-bottom: 6px;
+}
