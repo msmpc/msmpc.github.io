@@ -65,3 +65,14 @@
     font-size: 1rem;
   }
 }
+
+.whatsapp-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.whatsapp-box img {
+  width: 180px;
+  border: 2px solid #25D366;
+  border-radius: 10px;
+}
