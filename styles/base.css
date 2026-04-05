@@ -6,6 +6,9 @@
 
   --header-footer-bg: linear-gradient(135deg, #1e3c72, #2a5298);
   --header-footer-text: #fff;
+
+  --primary-light: #a9c1e8;
+  --primary-light: color-mix(in srgb, var(--primary) 30%, white);
 }
 
 
