@@ -18,6 +18,53 @@ header {
   align-items: center;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 100px;   /* adjust as needed */
+  width: auto;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.title-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .title-desktop {
+    display: none;
+  }
+  .title-mobile {
+    display: inline;
+  }
+}
+
+/* Right side */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Instagram icon */
+.insta-link img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.insta-link img:hover {
+  transform: scale(1.2);
+}
+
 .lang-switch a {
   text-decoration: none;
   font-weight: 600;
@@ -43,7 +90,8 @@ header {
 
 .navbar li {
   display: inline-block;
-  margin: 0 15px;
+  /*margin: 0 15px;*/
+  margin: 5px;
 }
 
 .navbar a {
@@ -51,15 +99,28 @@ header {
   font-weight: 600;
   color: #333;
   transition: .3s;
+  /*added*/
+  padding: 8px 14px;
+  border-radius: 20px;
 }
 
 .navbar a:hover {
+  background: rgba(42, 82, 152, 0.1);
   color: #2a5298;
 }
 
 .navbar a.active {
-  color: var(--primary);
-  border-bottom: 2px solid var(--primary);
+  background: var(--primary);
+  color: #fff;
+  /*border-bottom: 2px solid var(--primary);*/
+}
+
+/* Separator */
+.navbar li:not(:last-child)::after {
+content: "|";
+/*color: #ccc;*/
+color: var(--header-footer-bg);
+margin-left: 15px;
 }
 
 /* Footer */
